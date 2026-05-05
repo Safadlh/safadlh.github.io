@@ -2462,12 +2462,16 @@ section,
 }
 
 .portfolio-details .portfolio-details-media .thumbnail-grid img {
+  width: 100%;
   height: 80px;
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
 }
 
 .portfolio-details .portfolio-details-media .thumbnail-grid img:hover {
